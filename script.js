@@ -37,7 +37,7 @@ function resetTip() {
 }
 
 billInput.addEventListener("input", function () {
-  if (billInput.value !== "" && parseFloat(billInput.value) >= 10) {
+  if (billInput.value !== "" && parseFloat(billInput.value) > 0) {
     billAmount = parseFloat(billInput.value);
     calculateTip();
   } else {
