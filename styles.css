@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  text-align: center;
+  padding-top: 7%;
+  font-family: "Space Mono";
+  font-weight: 700;
+}
+
+.card {
+  background-color: #fff;
+  margin: 4% auto;
+  width: 60%;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.calculation-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0px 5px;
+}
+
+.bg {
+  background-color: hsl(180, 31%, 95%);
+  border: 1px solid hsl(180, 49%, 93%);
+  font-size: 22px;
+  border-radius: 5px;
+  color: hsl(173, 59%, 32%);
+  text-align: right;
+}
+
+.bg::placeholder {
+  color: hsl(184, 14%, 56%);
+  text-align: left;
+  font-weight: 400;
+}
+
+.bill-input {
+  padding: 4px 10px;
+  font-family: "Space Mono";
+  font-weight: 700;
+  width: 320px;
+  margin-bottom: 40px;
+}
+
+.percentage-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  padding-top: 5px;
+  width: 320px;
+  margin-bottom: 40px;
+}
+
+.tip-btn {
+  background-color: hsl(183, 100%, 15%);
+  color: #fff;
+  padding: 3px 6px;
+  width: 100%;
+  border: 1px solid hsl(183, 100%, 15%);
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tip-btn:hover {
+  background-color: #26c0ab;
+  color: hsl(183, 100%, 15%);
+  border: 1px solid hsl(172, 67%, 45%);
+  transition: all 0.2s ease-in-out;
+}
+
+.tip-btn:active {
+  background-color: hsl(173, 59%, 32%);
+}
+
+.custom {
+  padding: 3px 7px;
+  width: 100%;
+  font-family: "Space Mono";
+  font-weight: 800;
+  border-radius: 10px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: hsl(173, 59%, 32%);
+  text-align: right;
+  background-color: hsl(180, 31%, 95%);
+}
+
+.custom::placeholder {
+  font-size: 20px;
+  text-align: left;
+}
+
+.people-count {
+  padding: 4px 10px;
+  font-family: "Space Mono";
+  font-weight: 700;
+  width: 320px;
+}
+
+label {
+  font-size: 15px;
+  color: hsl(184, 14%, 56%);
+  margin-bottom: 5px;
+}
+
+.total-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #00494d;
+  color: #fff;
+  border-radius: 15px;
+  padding: 40px 30px;
+  gap: 20px;
+}
+
+.amount-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.amount-container h1 {
+  color: hsl(172, 67%, 45%);
+  font-size: 40px;
+}
+
+.total-text p {
+  font-size: 13px;
+  color: hsl(184, 14%, 56%);
+}
+
+.total-text h4 {
+  font-size: 15px;
+}
+
+.reset-btn {
+  margin-top: 80px;
+  background-color: hsl(172, 67%, 45%);
+  color: #fff;
+  padding: 10px 6px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+  color: hsl(183, 100%, 15%);
+  transition: all 0.2s ease;
+}
+
+.reset-btn:active {
+  background-color: hsl(173, 59%, 32%);
+}
+
+.active-btn {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  border: 1px solid hsl(172, 67%, 45%);
+}
+
+.attribution em {
+  color: rgb(78, 5, 78);
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding-top: 10%;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    padding-top: 10%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 10%;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .reset-btn {
+    color: #00494d;
+  }
+
+  .bg {
+    width: 100%;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  .total-text h4 {
+    font-size: 13px;
+  }
+
+  .total-text p {
+    font-size: 12px;
+  }
+
+  .amount-container h1 {
+    font-size: 35px;
+  }
+
+  .attribution {
+    font-size: 15px;
+  }
+}
